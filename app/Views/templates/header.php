@@ -22,5 +22,8 @@
         </nav>
     </div>
 </header>
-
+<form action="<?= site_url('logout') ?>" method="post">
+    <?= csrf_field() ?>
+    <button type="submit">Logout</button>
+</form>
 <main class="container"></main>
